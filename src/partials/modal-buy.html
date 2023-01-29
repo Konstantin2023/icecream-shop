@@ -1,0 +1,127 @@
+<div class="backdrop is-hidden" id="buy-now-modal">
+  <div class="modal modal-buy">
+    <button class="modal-buy__close" id="buy-now-modal-close" type="button">
+      <svg class="modal-buy__close-icon" width="16" height="16">
+        <use href="./images/icons/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy__title">Buy now</h2>
+    <form>
+      <!-- close button start -->
+
+      <!-- close button end -->
+
+      <!-- checkbox start -->
+      <ul class="modal-buy__list">
+        <li class="modal-buy__item">
+          <label>
+            <input
+              class="modal-buy__checkbox visually-hidden"
+              type="checkbox"
+              name="product"
+              value="ice-cream"
+              id="ice-cream"
+            />
+
+            <span class="modal-buy__thumb modal-buy__ice-cream">
+              <img
+                class="modal-buy__img"
+                srcset="
+                  ./images/buy-nov/ice-cream@1x.png 1x,
+                  ./images/buy-nov/ice-cream@2x.png 2x
+                "
+                src="./images/buy-nov/ice-cream@1x.png"
+                alt="ice cream"
+              />
+              <span class="modal-buy__subtitle">ice cream</span>
+            </span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input
+              class="modal-buy__checkbox visually-hidden"
+              type="checkbox"
+              name="product"
+              value="ice-coffee"
+              id="ice-coffee"
+            />
+
+            <span class="modal-buy__thumb modal-buy__ice-coffee">
+              <img
+                class="modal-buy__img"
+                srcset="
+                  ./images/buy-nov/ice-coffee@1x.png 1x,
+                  ./images/buy-nov/ice-coffee@2x.png 2x
+                "
+                src="./images/buy-nov/ice-coffee@1x.png"
+                alt="ice coffee"
+              />
+              <span class="modal-buy__subtitle">ice coffee</span>
+            </span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input
+              class="modal-buy__checkbox visually-hidden"
+              type="checkbox"
+              name="product"
+              value="milkshake"
+              id="milkshake"
+            />
+
+            <span class="modal-buy__thumb modal-buy__milkshake">
+              <img
+                class="modal-buy__img"
+                srcset="
+                  ./images/buy-nov/milkshake@1x.png 1x,
+                  ./images/buy-nov/milkshake@2x.png 2x
+                "
+                src="./images/buy-nov/milkshake@1x.png"
+                alt="milkshake"
+              />
+              <span class="modal-buy__subtitle">milkshake</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+      <!-- checkbox end -->
+
+      <label>
+        <input
+          class="modal-buy__username"
+          type="text"
+          placeholder="Name"
+          name="username"
+          id="username"
+          pattern="[A-Za-z0-9]{3,}"
+          title="The login cannot be less than 3 Latin characters."
+          required
+        />
+      </label>
+
+      <label>
+        <input
+          class="modal-buy__tel"
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]{10,10}"
+          title="The number must consist of 10 characters."
+          placeholder="Phone"
+          required
+        />
+      </label>
+
+      <textarea
+        class="modal-buy__textarea"
+        name="commentary"
+        id="commentary"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+      <button class="submit-btn btn-background" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
